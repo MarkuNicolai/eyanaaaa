@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine's Day</title>
+<style>
+    body {
+        font-family: 'Segoe Script', cursive;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-image: url('valentine.jpg'); /* Specify your background image URL */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.7); /* Add transparency for better readability */
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        color: #e75480; /* dark pink */
+        margin-bottom: 20px;
+    }
+    .question-box {
+        background-color: #f9d7e0; /* light pink */
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    p {
+        color: #e75480; /* dark pink */
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    img {
+        margin-bottom: 30px;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        padding: 15px 30px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: #e75480; /* dark pink */
+        color: white;
+        border-radius: 30px;
+        margin: 0 10px;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #d9436f; /* lighter dark pink */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day!</h1>
+        <div class="question-box">
+            <p>Will you be my Valentine?</p>
+            <img src="valentines.gif" alt="Heart Image" width="200" height="200">
+        </div>
+        <div class="button-container">
+            <button onclick="redirectToYes()">Yes</button>
+            <button onclick="redirectToNo()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToYes() {
+            window.location.href = 'yes.html';
+        }
+        function redirectToNo() {
+            window.location.href = 'no.html';
+        }
+    </script>
+</body>
+</html>
